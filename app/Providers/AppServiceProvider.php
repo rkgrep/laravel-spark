@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Team;
 use App\Spark;
 use Illuminate\Support\ServiceProvider;
 
