@@ -59,7 +59,7 @@ class AuthController extends Controller
         $this->teams = $teams;
         $this->plans = Spark::plans();
 
-        $this->middleware('guest', ['except' => 'getLogout']);
+        $this->middleware('guest', ['except' => 'logout']);
     }
 
     /**
