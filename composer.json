@@ -6,7 +6,11 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "laravel/cashier": "~6.0",
+        "erusev/parsedown": "~1.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "dompdf/dompdf": "^0.6.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -36,12 +40,10 @@
             "php artisan key:generate"
         ],
         "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
         ],
         "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
         ]
     },
     "config": {

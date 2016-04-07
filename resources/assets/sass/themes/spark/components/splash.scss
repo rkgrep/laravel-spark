@@ -1,0 +1,289 @@
+.spark-splash-screen {
+  color: #5a5a5a;
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased;
+
+  .splash-nav {
+    margin-top: 40px;
+  }
+
+  .splash-brand {
+    font-size: 34px;
+    font-weight: 300;
+
+    @media only screen and (min-width: 550px) {
+      font-size: 42px;
+    }
+
+    i {
+      color: $brand-primary;
+      margin-right: 15px;
+    }
+  }
+
+  .splash-nav-toggle {
+    border: 1px solid $brand-primary;
+    border-radius: 5px;
+    color: $brand-primary;;
+    font-weight: 400;
+    margin-right: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    @media only screen and (max-width: 549px) {
+      margin-top: 0.4em;
+    }
+
+    &:hover {
+      background: $brand-primary;
+      color: #fff;
+    }
+  }
+
+  .splash-nav-list {
+    line-height: 69px;
+    vertical-align: middle;
+  }
+
+  .splash-nav-link a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a5a5a;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .splash-nav-link-highlight a {
+    color: $brand-primary;
+  }
+
+  .splash-nav-link-highlight-border {
+    margin-top: 10px;
+
+    a {
+      color: $brand-primary;
+      border: 1px solid $brand-primary;
+      padding: 12px 16px 12px 16px;
+      border-radius: 5px;
+      margin-right: 0;
+      transition: background-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        background-color: $brand-primary;
+        color: white;
+      }
+    }
+  }
+
+  /* Override bootstrap colors */
+  .nav > .splash-nav-link a:hover {
+    background: inherit;
+  }
+  .nav > .splash-nav-link.splash-nav-link-highlight-border a:hover {
+    background-color: $brand-primary;
+  }
+
+  .splash-inspiration-row {
+    margin-top: 30px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 50px;
+    }
+
+    #splash-inspiration-heading {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 50px;
+      margin-bottom: 15px;
+    }
+
+    #splash-inspiration-text {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 40px;
+    }
+
+    .splash-browser-window-container {
+      margin: 0 auto;
+      max-width: 550px;
+    }
+
+    .splash-browser-window {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      max-width: 550px;
+
+      @media screen and (max-width: 992px) {
+        margin: 35px auto 0px auto;
+      }
+    }
+
+    .splash-browser-dots-container {
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .splash-browser-dots {
+      margin: 0;
+      padding: 0;
+
+      .red {
+        color: #e34c24;
+      }
+
+      .yellow {
+        color: #e4d735;
+      }
+
+      .green {
+        color: #2ad665;
+      }
+    }
+
+    .splash-browser-dots li {
+      margin: 0 5px 0 0;
+      padding: 0;
+    }
+  }
+
+  .splash-row-heading {
+    @extend .text-center;
+    border-top: 1px solid #ccc;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+
+  .splash-features-icon-row {
+    margin-top: 35px;
+
+    .splash-features-feature:not(:first-child) {
+      @media screen and (max-width: 992px) {
+        margin-top: 35px;
+      }
+    }
+
+    .splash-feature-icon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .splash-feature-heading {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .splash-feature-text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+
+  .splash-pricing-table-row {
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    .splash-plan-heading {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .splash-plan-feature-list {
+      padding-left: 0;
+
+      li {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 40px;
+        list-style: none;
+      }
+    }
+
+    .splash-plan-price {
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    .splash-plan-interval {
+      color: #aaa;
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .splash-get-started-btn {
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 15px 20px 15px 20px;
+    transition: background-color 0.2s ease;
+  }
+
+  .splash-customer-row {
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+    .splash-customer:not(:first-child) {
+      @media screen and (max-width: 992px) {
+        margin-top: 35px;
+      }
+    }
+
+    .splash-customer-avatar {
+      margin-bottom: 15px;
+
+      img {
+        border-radius: 999px;
+        width: 100px;
+      }
+    }
+
+    .splash-customer-quote {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+
+    .splash-customer-identity {
+      font-size: 16px;
+      font-weight: 300;
+
+      .splash-customer-name {
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      .splash-customer-title {
+        font-style: italic;
+      }
+    }
+  }
+
+  .splash-footer {
+    border-top: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+    .splash-footer-company {
+      color: #aaa;
+      line-height: 45px;
+      vertical-align: middle;
+    }
+
+    .splash-footer-social-icons {
+      color: #aaa;
+      font-size: 32px;
+
+      a {
+        color: #aaa;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "laravel-spark",
+  "version": "1.1.3",
+  "description": "Laravel Spark",
+  "main": "spark.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laravel/spark"
+  },
+  "keywords": [
+    "laravel",
+    "spark"
+  ],
+  "author": {
+    "name": "Taylor Otwell"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/laravel/spark",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6",
+    "promise": "^7.0.4",
+    "underscore": "^1.8.3",
+    "vue": "^1.0.0",
+    "vue-resource": "^0.1.11"
+  }
+}

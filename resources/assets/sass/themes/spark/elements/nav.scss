@@ -1,0 +1,36 @@
+.navbar {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  .navbar-brand {
+    font-size: 28px;
+
+    i {
+      color: $brand-primary;
+    }
+  }
+
+  .navbar-nav {
+    padding-top: 0px;
+
+    > li > a {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  .dropdown-menu {
+    li {
+      font-size: 14px;
+
+      a {
+        font-weight: 300;
+        line-height: 25px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

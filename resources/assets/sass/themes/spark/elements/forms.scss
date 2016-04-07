@@ -1,0 +1,13 @@
+.spark-screen {
+  label {
+    font-weight: 300;
+  }
+
+  .has-error {
+    @include form-control-validation($state-danger-bg, $state-danger-bg, $state-danger-bg);
+
+    .control-label {
+      color: $text-color;
+    }
+  }
+}

@@ -29,4 +29,29 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    /**
+     * Display the form to request a password reset link.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getEmail()
+    {
+        return view('auth.password.email');
+    }
+
+    /**
+     * Display the password reset view for the given token.
+     *
+     * @param  string  $token
+     * @return \Illuminate\Http\Response
+     */
+    public function getReset($token = null)
+    {
+        if (is_null($token)) {
+            throw new NotFoundHttpException;
+        }
+
+        return view('auth.password.reset')->with('token', $token);
+    }
 }

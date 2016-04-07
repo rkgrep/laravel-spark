@@ -2,25 +2,49 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Teams\CanJoinTeams;
+use Laravel\Cashier\Billable;
+use Illuminate\Foundation\Auth\User as BaseUser;
+use App\Auth\TwoFactor\Authenticatable as TwoFactorAuthenticatable;
+use App\Contracts\Auth\TwoFactor\Authenticatable as TwoFactorAuthenticatableContract;
 
-class User extends Authenticatable
+class User extends BaseUser implements TwoFactorAuthenticatableContract
 {
+    use Billable, TwoFactorAuthenticatable;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email',
+        'name',
+        'password',
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = [
+        'using_two_factor_auth'
+    ];
+
+    /**
+     * The attributes excluded from the model's JSON form.
      *
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'card_brand',
+        'card_last_four',
+        'extra_billing_info',
+        'password',
+        'remember_token',
+        'stripe_id',
+        'stripe_subscription',
+        'two_factor_options',
     ];
 }

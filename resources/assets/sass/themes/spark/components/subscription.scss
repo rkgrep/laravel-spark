@@ -1,0 +1,187 @@
+/*
+    Spark Registration Styling
+*/
+
+.spark-screen {
+  .spark-subscription-inspiration-heading {
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .spark-subscription-inspiration-subheading {
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .spark-subscription-inspiration-single {
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .spark-plan-selector-row {
+    margin-bottom: 30px;
+  }
+
+  .spark-plan-selector-interval {
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    vertical-align: top;
+  }
+
+  .spark-plan .panel-heading {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .spark-plan ul {
+    padding-left: 0;
+  }
+
+  .spark-plan li {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .spark-plan .spark-plan-price {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .spark-plan .spark-plan-interval {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .spark-plan-discount-faded {
+    color: #aaa;
+  }
+
+  .spark-plan-discount {
+    color: #5cb85c;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .spark-plan-discount-interval {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .spark-plan-subscribe-button-container {
+    text-align: center;
+  }
+
+  .spark-plan-subscribe-button {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 15px 12px 15px;
+  }
+
+  /*
+   Spark Plan Selector Toggle Switch
+  */
+
+  .spark-toggle {
+    margin-left: -9999px;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .spark-toggle + label {
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  input.spark-toggle-round-flat + label {
+    background-color: #ccc;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+    height: 60px;
+    padding: 2px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+    width: 120px;
+  }
+
+  input.spark-toggle-round-flat + label:before, input.spark-toggle-round-flat + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  input.spark-toggle-round-flat + label:before {
+    background-color: #fff;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+  }
+
+  input.spark-toggle-round-flat + label:after {
+    background-color: #ccc;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    -webkit-transition: margin 0.4s, background 0.4s;
+    -moz-transition: margin 0.4s, background 0.4s;
+    -o-transition: margin 0.4s, background 0.4s;
+    transition: margin 0.4s, background 0.4s;
+    width: 52px;
+  }
+
+  input.spark-toggle-round-flat:checked + label {
+    background-color: #ccc;
+  }
+
+  input.spark-toggle-round-flat:checked + label:after {
+    background-color: #ccc;
+    margin-left: 60px;
+  }
+}

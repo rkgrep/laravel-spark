@@ -1,0 +1,25 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 80px;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.fa-btn {
+  margin-right: 5px;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1px solid #e7e7e7;
+  bottom: 0;
+  min-height: 80px;
+  position: absolute;
+  width: 100%;
+}

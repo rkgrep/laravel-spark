@@ -1,0 +1,18 @@
+.spark-screen {
+  .panel-body {
+    font-weight: 300;
+  }
+
+  .panel-heading {
+    border-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .panel-flush {
+    .panel-body, .panel-header {
+      padding: 0;
+    }
+  }
+}
