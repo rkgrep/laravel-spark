@@ -1,15 +1,11 @@
 <?php
 
 Route::group(['middleware' => 'web'], function ($router) {
-    $router->get('/', function () {
-        return view('welcome');
-    });
-
-    $router->get('home', ['middleware' => 'auth', function () {
-        return view('home');
-    }]);
-
+    $router->get('/', 'WelcomeController@show');
     $router->auth();
+
+    // Profile Dashboard
+    $router->get('home', 'HomeController@show');
 
     // Terms Routes...
     $router->get('terms', 'TermsController@show');
