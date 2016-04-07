@@ -10,7 +10,7 @@ use App\Contracts\Auth\TwoFactor\Authenticatable as TwoFactorAuthenticatableCont
 
 class User extends BaseUser implements TwoFactorAuthenticatableContract
 {
-    use Billable, TwoFactorAuthenticatable;
+    use Billable, TwoFactorAuthenticatable, CanJoinTeams;
 
     /**
      * The attributes that are mass assignable.

@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $twoFactorAuth = true;
+    protected $twoFactorAuth = false;
 
     /**
      * Bootstrap any application services.
@@ -187,19 +187,19 @@ class AppServiceProvider extends ServiceProvider
      */
     protected function customizeSubscriptionPlans()
     {
-        // Spark::free()
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+        Spark::free()
+                ->features([
+                    'Feature 1',
+                    'Feature 2',
+                    'Feature 3',
+                ]);
 
-        // Spark::plan('Basic', 'stripe-id')->price(10)
-        //         ->trialDays(7)
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+        Spark::plan('Spark Test 1', 'spark-test-1')->price(9.99)
+                ->trialDays(15)
+                ->features([
+                    'Feature 1',
+                    'Feature 2',
+                    'Feature 3',
+                ]);
     }
 }
