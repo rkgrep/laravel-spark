@@ -11,7 +11,7 @@ class TeamTabs extends Tabs
      */
     public function owner()
     {
-        return new Tab('Owner Settings', 'spark::settings.team.tabs.owner', 'fa-star', function ($team, $user) {
+        return new Tab('Owner Settings', 'settings.team.tabs.owner', 'fa-star', function ($team, $user) {
             return $user->ownsTeam($team);
         });
     }
@@ -23,6 +23,6 @@ class TeamTabs extends Tabs
      */
     public function membership()
     {
-        return new Tab('Membership', 'spark::settings.team.tabs.membership', 'fa-users');
+        return new Tab('Membership', 'settings.team.tabs.membership', 'fa-users');
     }
 }

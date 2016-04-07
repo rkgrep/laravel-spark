@@ -73,8 +73,8 @@ class Team extends Model
         }
 
         $email = $invitation->user_id
-                        ? 'spark::emails.team.invitations.existing'
-                        : 'spark::emails.team.invitations.new';
+                        ? 'emails.team.invitations.existing'
+                        : 'emails.team.invitations.new';
 
         Mail::send($email, compact('invitation'), function ($m) use ($invitation) {
             $m->to($invitation->email)->subject('New Invitation!');

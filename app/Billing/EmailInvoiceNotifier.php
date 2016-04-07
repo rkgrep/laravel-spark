@@ -28,7 +28,7 @@ class EmailInvoiceNotifier implements InvoiceNotifier
 
         $data = compact('user', 'invoice', 'invoiceData');
 
-        Mail::send('spark::emails.billing.invoice', $data, function ($message) use ($user, $invoice, $invoiceData) {
+        Mail::send('emails.billing.invoice', $data, function ($message) use ($user, $invoice, $invoiceData) {
             $message->to($user->email, $user->name)
                     ->subject('Your '.$invoiceData['product'].' Invoice')
                     ->attachData($invoice->pdf($invoiceData), 'invoice.pdf');
